@@ -1,0 +1,3 @@
+Upstream releases vendor the external zstd C library (already packaged in
+Debian as libzstd-dev). The relevant files are excluded using the Files-Excluded
+debian/copyright mechanism.

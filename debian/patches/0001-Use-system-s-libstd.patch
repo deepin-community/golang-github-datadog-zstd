@@ -1,0 +1,23 @@
+From 039dec6d3db6fe5b63a8a2b365f1d46201a045c9 Mon Sep 17 00:00:00 2001
+From: Christos Trochalakis <yatiohi@ideopolis.gr>
+Date: Mon, 24 Dec 2018 14:24:13 +0200
+Subject: [PATCH] Use system's libstd
+
+---
+ build_debian.go | 4 ++++
+ 1 file changed, 4 insertions(+)
+ create mode 100644 build_debian.go
+
+diff --git a/build_debian.go b/build_debian.go
+new file mode 100644
+index 0000000..b45e801
+--- /dev/null
++++ b/build_debian.go
+@@ -0,0 +1,4 @@
++package zstd
++
++// #cgo pkg-config: libzstd
++import "C"
+-- 
+2.19.2
+
